@@ -1,0 +1,13 @@
+Number	Label	Charge	SybylType	Xfrac + ESD	Yfrac + ESD	Zfrac + ESD	Symm. op.
+1	Na1	0	Na	0	0	0	x,y,z
+2	Cl1	0	Cl	-0.5	0.0	0.0	x,y,z
+3	Na1	0	Na	-1	0	0	-1+x,y,z
+4	Na1	0	Na	-0.5	0	-0.5	-1/2+x,y,-1/2+z
+5	Na1	0	Na	-0.5	0	0.5	-1/2+x,y,1/2+z
+6	Na1	0	Na	-0.5	-0.5	0	-1/2+x,-1/2+y,z
+7	Na1	0	Na	-0.5	0.5	0	-1/2+x,1/2+y,z
+8	Cl1	0	Cl	0.5	0.0	0.0	1+x,y,z
+9	Cl1	0	Cl	0.0	0.0	-0.5	1/2+x,y,-1/2+z
+10	Cl1	0	Cl	0.0	0.0	0.5	1/2+x,y,1/2+z
+11	Cl1	0	Cl	0.0	-0.5	0.0	1/2+x,-1/2+y,z
+12	Cl1	0	Cl	0.0	0.5	0.0	1/2+x,1/2+y,z

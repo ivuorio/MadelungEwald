@@ -1,0 +1,259 @@
+###############################################################################
+# Abrahams, S.C.;Bernstein, J.L. (1965)
+# Acta Crystallographica (1,1948-23,1967) 18, 926-932
+# Accuracy of an automatic diffractometer. Measurement of the sodium chloride \
+# structure factors
+# 
+# CIF by ICSD-for-WWW,  Copyright 2003 FIZ-Karlsruhe & A.W.Hewat (hewat@ill.fr)
+# NOT TO BE PUBLISHED IN ANY FORM. See http://icsd.ill.fr/icsd/conditions.html
+###############################################################################
+
+data_18189-ICSD
+_database_code_ICSD                18189
+_audit_creation_date               1980-01-01
+_chemical_name_systematic
+'Sodium chloride'
+_chemical_formula_structural       
+'Na Cl'
+_chemical_formula_sum              
+'Cl1 Na1'
+_publ_section_title                
+'Cl1 Na1'
+loop_
+_citation_id
+_citation_journal_abbrev
+_citation_year
+_citation_journal_volume
+_citation_page_first
+_citation_page_last
+_citation_journal_id_ASTM
+primary 'Acta Crystallographica (1,1948-23,1967)' 1965 18 926 932 ACCRA9
+loop_
+_publ_author_name
+Abrahams, S.C.;Bernstein, J.L.
+_cell_length_a                     5.62
+_cell_length_b                     5.62
+_cell_length_c                     5.62
+_cell_angle_alpha                  90.
+_cell_angle_beta                   90.
+_cell_angle_gamma                  90.
+_cell_volume                       177.501
+_cell_formula_units_Z              4.000
+_symmetry_space_group_name_H-M     'F m -3 m'
+_symmetry_Int_Tables_number        225
+_refine_ls_R_factor_all            0.0226
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+ 1 'x,y,z'
+ 2 'x,1/2+y,1/2+z'
+ 3 '1/2+x,y,1/2+z'
+ 4 '1/2+x,1/2+y,z'
+ 5 'x,-y,-z'
+ 6 'x,1/2-y,1/2-z'
+ 7 '1/2+x,-y,1/2-z'
+ 8 '1/2+x,1/2-y,-z'
+ 9 'x,-y,z'
+ 10 'x,1/2-y,1/2+z'
+ 11 '1/2+x,-y,1/2+z'
+ 12 '1/2+x,1/2-y,z'
+ 13 '-z,-y,x'
+ 14 '-z,1/2-y,1/2+x'
+ 15 '1/2-z,-y,1/2+x'
+ 16 '1/2-z,1/2-y,x'
+ 17 'z,-y,x'
+ 18 'z,1/2-y,1/2+x'
+ 19 '1/2+z,-y,1/2+x'
+ 20 '1/2+z,1/2-y,x'
+ 21 '-y,x,-z'
+ 22 '-y,1/2+x,1/2-z'
+ 23 '1/2-y,x,1/2-z'
+ 24 '1/2-y,1/2+x,-z'
+ 25 '-y,x,z'
+ 26 '-y,1/2+x,1/2+z'
+ 27 '1/2-y,x,1/2+z'
+ 28 '1/2-y,1/2+x,z'
+ 29 '-y,-z,x'
+ 30 '-y,1/2-z,1/2+x'
+ 31 '1/2-y,-z,1/2+x'
+ 32 '1/2-y,1/2-z,x'
+ 33 '-y,z,x'
+ 34 '-y,1/2+z,1/2+x'
+ 35 '1/2-y,z,1/2+x'
+ 36 '1/2-y,1/2+z,x'
+ 37 'x,-z,-y'
+ 38 'x,1/2-z,1/2-y'
+ 39 '1/2+x,-z,1/2-y'
+ 40 '1/2+x,1/2-z,-y'
+ 41 'x,-z,y'
+ 42 'x,1/2-z,1/2+y'
+ 43 '1/2+x,-z,1/2+y'
+ 44 '1/2+x,1/2-z,y'
+ 45 'x,z,-y'
+ 46 'x,1/2+z,1/2-y'
+ 47 '1/2+x,z,1/2-y'
+ 48 '1/2+x,1/2+z,-y'
+ 49 'x,z,y'
+ 50 'x,1/2+z,1/2+y'
+ 51 '1/2+x,z,1/2+y'
+ 52 '1/2+x,1/2+z,y'
+ 53 '-z,x,-y'
+ 54 '-z,1/2+x,1/2-y'
+ 55 '1/2-z,x,1/2-y'
+ 56 '1/2-z,1/2+x,-y'
+ 57 '-z,x,y'
+ 58 '-z,1/2+x,1/2+y'
+ 59 '1/2-z,x,1/2+y'
+ 60 '1/2-z,1/2+x,y'
+ 61 'z,x,-y'
+ 62 'z,1/2+x,1/2-y'
+ 63 '1/2+z,x,1/2-y'
+ 64 '1/2+z,1/2+x,-y'
+ 65 'z,x,y'
+ 66 'z,1/2+x,1/2+y'
+ 67 '1/2+z,x,1/2+y'
+ 68 '1/2+z,1/2+x,y'
+ 69 'y,x,-z'
+ 70 'y,1/2+x,1/2-z'
+ 71 '1/2+y,x,1/2-z'
+ 72 '1/2+y,1/2+x,-z'
+ 73 'y,x,z'
+ 74 'y,1/2+x,1/2+z'
+ 75 '1/2+y,x,1/2+z'
+ 76 '1/2+y,1/2+x,z'
+ 77 'y,-z,x'
+ 78 'y,1/2-z,1/2+x'
+ 79 '1/2+y,-z,1/2+x'
+ 80 '1/2+y,1/2-z,x'
+ 81 'y,z,x'
+ 82 'y,1/2+z,1/2+x'
+ 83 '1/2+y,z,1/2+x'
+ 84 '1/2+y,1/2+z,x'
+ 85 'x,y,-z'
+ 86 'x,1/2+y,1/2-z'
+ 87 '1/2+x,y,1/2-z'
+ 88 '1/2+x,1/2+y,-z'
+ 89 '-z,y,x'
+ 90 '-z,1/2+y,1/2+x'
+ 91 '1/2-z,y,1/2+x'
+ 92 '1/2-z,1/2+y,x'
+ 93 'z,y,x'
+ 94 'z,1/2+y,1/2+x'
+ 95 '1/2+z,y,1/2+x'
+ 96 '1/2+z,1/2+y,x'
+ 97 '-x,-y,-z'
+ 98 '-x,1/2-y,1/2-z'
+ 99 '1/2-x,-y,1/2-z'
+ 100 '1/2-x,1/2-y,-z'
+ 101 '-x,y,z'
+ 102 '-x,1/2+y,1/2+z'
+ 103 '1/2-x,y,1/2+z'
+ 104 '1/2-x,1/2+y,z'
+ 105 '-x,y,-z'
+ 106 '-x,1/2+y,1/2-z'
+ 107 '1/2-x,y,1/2-z'
+ 108 '1/2-x,1/2+y,-z'
+ 109 'z,y,-x'
+ 110 'z,1/2+y,1/2-x'
+ 111 '1/2+z,y,1/2-x'
+ 112 '1/2+z,1/2+y,-x'
+ 113 '-z,y,-x'
+ 114 '-z,1/2+y,1/2-x'
+ 115 '1/2-z,y,1/2-x'
+ 116 '1/2-z,1/2+y,-x'
+ 117 'y,-x,z'
+ 118 'y,1/2-x,1/2+z'
+ 119 '1/2+y,-x,1/2+z'
+ 120 '1/2+y,1/2-x,z'
+ 121 'y,-x,-z'
+ 122 'y,1/2-x,1/2-z'
+ 123 '1/2+y,-x,1/2-z'
+ 124 '1/2+y,1/2-x,-z'
+ 125 'y,z,-x'
+ 126 'y,1/2+z,1/2-x'
+ 127 '1/2+y,z,1/2-x'
+ 128 '1/2+y,1/2+z,-x'
+ 129 'y,-z,-x'
+ 130 'y,1/2-z,1/2-x'
+ 131 '1/2+y,-z,1/2-x'
+ 132 '1/2+y,1/2-z,-x'
+ 133 '-x,z,y'
+ 134 '-x,1/2+z,1/2+y'
+ 135 '1/2-x,z,1/2+y'
+ 136 '1/2-x,1/2+z,y'
+ 137 '-x,z,-y'
+ 138 '-x,1/2+z,1/2-y'
+ 139 '1/2-x,z,1/2-y'
+ 140 '1/2-x,1/2+z,-y'
+ 141 '-x,-z,y'
+ 142 '-x,1/2-z,1/2+y'
+ 143 '1/2-x,-z,1/2+y'
+ 144 '1/2-x,1/2-z,y'
+ 145 '-x,-z,-y'
+ 146 '-x,1/2-z,1/2-y'
+ 147 '1/2-x,-z,1/2-y'
+ 148 '1/2-x,1/2-z,-y'
+ 149 'z,-x,y'
+ 150 'z,1/2-x,1/2+y'
+ 151 '1/2+z,-x,1/2+y'
+ 152 '1/2+z,1/2-x,y'
+ 153 'z,-x,-y'
+ 154 'z,1/2-x,1/2-y'
+ 155 '1/2+z,-x,1/2-y'
+ 156 '1/2+z,1/2-x,-y'
+ 157 '-z,-x,y'
+ 158 '-z,1/2-x,1/2+y'
+ 159 '1/2-z,-x,1/2+y'
+ 160 '1/2-z,1/2-x,y'
+ 161 '-z,-x,-y'
+ 162 '-z,1/2-x,1/2-y'
+ 163 '1/2-z,-x,1/2-y'
+ 164 '1/2-z,1/2-x,-y'
+ 165 '-y,-x,z'
+ 166 '-y,1/2-x,1/2+z'
+ 167 '1/2-y,-x,1/2+z'
+ 168 '1/2-y,1/2-x,z'
+ 169 '-y,-x,-z'
+ 170 '-y,1/2-x,1/2-z'
+ 171 '1/2-y,-x,1/2-z'
+ 172 '1/2-y,1/2-x,-z'
+ 173 '-y,z,-x'
+ 174 '-y,1/2+z,1/2-x'
+ 175 '1/2-y,z,1/2-x'
+ 176 '1/2-y,1/2+z,-x'
+ 177 '-y,-z,-x'
+ 178 '-y,1/2-z,1/2-x'
+ 179 '1/2-y,-z,1/2-x'
+ 180 '1/2-y,1/2-z,-x'
+ 181 '-x,-y,z'
+ 182 '-x,1/2-y,1/2+z'
+ 183 '1/2-x,-y,1/2+z'
+ 184 '1/2-x,1/2-y,z'
+ 185 'z,-y,-x'
+ 186 'z,1/2-y,1/2-x'
+ 187 '1/2+z,-y,1/2-x'
+ 188 '1/2+z,1/2-y,-x'
+ 189 '-z,-y,-x'
+ 190 '-z,1/2-y,1/2-x'
+ 191 '1/2-z,-y,1/2-x'
+ 192 '1/2-z,1/2-y,-x'
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Na1+     1.
+Cl1-     -1.
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_B_iso_or_equiv
+_atom_site_occupancy
+Na1 Na1+ 4 a 0 0 0 1.689(24) 1.
+Cl1 Cl1- 4 b 0.5 0.5 0.5 1.357(17) 1.
+#End of data_18189-ICSD
+
+

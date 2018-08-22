@@ -146,7 +146,7 @@ def ResSum(ions, kmax, alpha, cutoff):
                        k=a0*Kcell[0]+a1*Kcell[1]+a2*Kcell[2]
                        #square of the wavevector
                        ksq = np.dot(k,k)
-                       if ksq < kcutsq:
+                       if ksq < cutoffsq:
                            u1 += (i.charge*j.charge)/ksq*np.exp(-ksq/(4.0*alpha*alpha))*np.cos(np.dot(k,r_ij))
                            #continue
                        ########################33
@@ -190,7 +190,11 @@ def nearestNeighbourDistance(atoms):
         if distance > 0 and distance < min:
             min = distance
     return min
-
+def saveToFile(filename,mc,alphas):
+    f = open('output/'+filename, 'w+')
+    for i in range(len(alphas)):
+        f.write(str(alphas[i])+' & '+str(mc[i]) +'\n')
+    f.close()
 def madelung(args):
     ###CONSTANTS###
     
@@ -202,7 +206,7 @@ def madelung(args):
     positonOfInterest = 0
     alpha = 0.0
     cutoffs=[3] #list of cutoff values to loop 
-    alphas= np.linspace(0.01,25,20) #range(20,100,5) #[3,4,6] #list of alpha ewald splitting values to loop
+    alphas= np.linspace(0.01,3,20) #range(20,100,5) #[3,4,6] #list of alpha ewald splitting values to loop
     aCharge = 0 #charge of the anion
     cCharge = 0 #charge of the cation
     mc = 0.0 #for single madelung constant value
@@ -267,7 +271,7 @@ def madelung(args):
     if args.cation is not '':
         cCharge = int(args.cation)
         if args.silent:
-            print('Anion charge: ',cCharge)
+            print('Cation charge: ',cCharge)
     else:
         cCharge = charge[-1]
 
@@ -281,6 +285,7 @@ def madelung(args):
         for alphal in alphas:
             alpha=alphal/minim
             #caulculate real space contributions qpe and spe
+            
             print('Counting real space contribution...')
             spe = RealConstant(atoms, alpha) #selfInteraction
             
@@ -292,7 +297,7 @@ def madelung(args):
             epe = ResiprocalSum(atoms, 4, alpha)
             print('Done!')
             #Total Energy
-            tpe=(qpe/2.0+epe+spe)*minim/2  #(-8.0) #(qpe-epe-spe)*minim 
+            tpe=(qpe/2.0+epe+spe)*minim #/2  #(-8.0) #(qpe-epe-spe)*minim 
             print('Results for the MC at alpha value: ', alpha)
             print ('Self interaction:', spe)
             print ('ERF: ', qpe)
@@ -300,13 +305,18 @@ def madelung(args):
             print('Total energy: ', tpe)
             mc=tpe/numberOfMolecules/aCharge/cCharge
             print('Madelung constant: ', mc)
+            
+            """
             U1=(ResSum(atoms, 4, alpha,50))
             U2=PointEnergy(atoms)*alpha/sqrtpi
-            ressum = (U1+U2)*minim/(-8.0*numberOfMolecules)
+            ressum = (U1+U2)*minim/(aCharge*cCharge*numberOfMolecules)
             print('ressum: ',ressum)
-            MC.append(ressum)
+            """
+            MC.append(mc)
     plt.plot(alphas, MC)
-    #plt.savefig('mc_',args.input)
+    plt.savefig('pics/'+args.input)
+    saveToFile(args.input,MC,alphas)
+    
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

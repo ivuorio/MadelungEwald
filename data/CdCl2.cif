@@ -1,0 +1,78 @@
+###############################################################################
+# Pauling, L.;Hoard, J.L. (1930)
+# Zeitschrift fuer Krist., Kristallgeometrie, Kristallphysik, Kristallchemie \
+# (-144,1977) 74, 546-551
+# The crystal structure of cadmium chloride
+# 
+# CIF by ICSD-for-WWW,  Copyright 2003 FIZ-Karlsruhe & A.W.Hewat (hewat@ill.fr)
+# NOT TO BE PUBLISHED IN ANY FORM. See http://icsd.ill.fr/icsd/conditions.html
+###############################################################################
+
+data_30255-ICSD
+_database_code_ICSD                30255
+_audit_creation_date               1986-10-09
+_chemical_name_systematic
+'Cadmium dichloride'
+_chemical_formula_structural       
+'Cd Cl2'
+_chemical_formula_sum              
+'Cd1 Cl2'
+_publ_section_title                
+'Cd1 Cl2'
+loop_
+_citation_id
+_citation_journal_abbrev
+_citation_year
+_citation_journal_volume
+_citation_page_first
+_citation_page_last
+_citation_journal_id_ASTM
+primary 'Zeitschrift fuer Krist., Kristallgeometr' 1930 74 546 551 ZEKGAX
+loop_
+_publ_author_name
+Pauling, L.;Hoard, J.L.
+_cell_length_a                     6.23
+_cell_length_b                     6.23
+_cell_length_c                     6.23
+_cell_angle_alpha                  36.03
+_cell_angle_beta                   36.03
+_cell_angle_gamma                  36.03
+_cell_volume                       74.8308
+_cell_formula_units_Z              1.000
+_symmetry_space_group_name_H-M     'R -3 m R'
+_symmetry_Int_Tables_number        166
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+ 1 'x,y,z'
+ 2 'x,z,y'
+ 3 'z,x,y'
+ 4 'y,x,z'
+ 5 'y,z,x'
+ 6 'z,y,x'
+ 7 '-x,-y,-z'
+ 8 '-x,-z,-y'
+ 9 '-z,-x,-y'
+ 10 '-y,-x,-z'
+ 11 '-y,-z,-x'
+ 12 '-z,-y,-x'
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Cd2+     2.
+Cl1-     -1.
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_B_iso_or_equiv
+_atom_site_occupancy
+Cd1 Cd2+ 1 a 0 0 0 0. 1.
+Cl1 Cl1- 2 c 0.25(1) 0.25(1) 0.25(1) 0. 1.
+#End of data_30255-ICSD
+
+
