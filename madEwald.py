@@ -205,8 +205,8 @@ def madelung(args):
     #atoms
     positonOfInterest = 0
     alpha = 0.0
-    cutoffs=[3] #list of cutoff values to loop 
-    alphas= np.linspace(0.01,3,20) #range(20,100,5) #[3,4,6] #list of alpha ewald splitting values to loop
+    cutoffs=[10] #list of cutoff values to loop 
+    alphas= np.linspace(0.01,1.5,7) #range(20,100,5) #[3,4,6] #list of alpha ewald splitting values to loop
     aCharge = 0 #charge of the anion
     cCharge = 0 #charge of the cation
     mc = 0.0 #for single madelung constant value
@@ -287,23 +287,23 @@ def madelung(args):
             #caulculate real space contributions qpe and spe
             
             print('Counting real space contribution...')
-            spe = RealConstant(atoms, alpha) #selfInteraction
+            E_self = RealConstant(atoms, alpha) #selfInteraction spe
             
-            qpe = RealSum(atoms, alpha, cutoff) #realSpaceSum
+            E_short = RealSum(atoms, alpha, cutoff) #realSpaceSum qpe
             
             print('Done!')
             #calculate reciprocal space contribution epe
             print('Counting reciprocal space contribution...')
-            epe = ResiprocalSum(atoms, 4, alpha)
+            E_long = ResiprocalSum(atoms, 4, alpha) #epe
             print('Done!')
             #Total Energy
-            tpe=(qpe/2.0+epe+spe)*minim #/2  #(-8.0) #(qpe-epe-spe)*minim 
+            total=(E_short/2.0+E_long+E_self)*minim #/2  #(-8.0) #(qpe-epe-spe)*minim 
             print('Results for the MC at alpha value: ', alpha)
-            print ('Self interaction:', spe)
-            print ('ERF: ', qpe)
-            print('Fourier: ', epe)
-            print('Total energy: ', tpe)
-            mc=tpe/numberOfMolecules/aCharge/cCharge
+            print ('Self interaction energy:', E_self)
+            print ('Short range interaction: ', E_short)
+            print('Long range interaction: ', E_long)
+            print('Total energy: ', total)
+            mc=total/numberOfMolecules/aCharge/cCharge
             print('Madelung constant: ', mc)
             
             """
@@ -314,8 +314,8 @@ def madelung(args):
             """
             MC.append(mc)
     plt.plot(alphas, MC)
-    plt.savefig('pics/'+args.input)
-    saveToFile(args.input,MC,alphas)
+    plt.savefig('pics/'+args.input+'cutoff'+str(cutoff))
+    saveToFile(args.input+'cutoff'+str(cutoff),MC,alphas)
     
     
 if __name__ == "__main__":
